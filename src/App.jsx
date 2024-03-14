@@ -4,7 +4,6 @@ import { RecipePage } from "./pages/RecipePage";
 import { data } from "./utils/data";
 
 export const App = () => {
-  // Your state code here
   const [selectedRecipe, setSelectedRecipe] = useState();
 
   return (
