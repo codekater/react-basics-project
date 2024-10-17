@@ -36,7 +36,7 @@ export const RecipeListPage = ({ recipes, clickFn }) => {
               bgClip="text"
               fontWeight="extrabold"
             >
-              ✨ Your Recipe App ✨
+              Your Recipe App
             </Heading>
           </Center>
           <Center>
