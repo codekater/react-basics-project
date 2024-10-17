@@ -13,6 +13,8 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import Logo from "../img/logo.png";
+import { useEffect } from "react";
 
 export const RecipePage = ({ recipe, clickFn }) => {
   function totalCookingTime(totalMinutes) {
@@ -22,16 +24,20 @@ export const RecipePage = ({ recipe, clickFn }) => {
   }
   console.log(totalCookingTime(100));
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Container
       maxW="xxl"
-      bgGradient="linear(to-r, blue.200, purple.200, pink.200)"
+      //bgGradient="linear(to-r, blue.200, purple.200, pink.200)"
       color="gray.700"
     >
       <Center>
         <Box bgColor="red.50" maxW="100vh">
           <Center>
-            <Image h="50px" src="nom nom.png" alt="logo" />
+            <Image h="50px" src={Logo} alt="logo" />
           </Center>
           <Image
             src={recipe.recipe.image}
