@@ -35,9 +35,8 @@ export const RecipeListPage = ({ recipes, clickFn }) => {
               bgGradient="linear(to-l, blue.600, purple.600, pink.600)"
               bgClip="text"
               fontWeight="extrabold"
-              textShadow="1px 1px blue.600"
             >
-              Your Recipe App
+              ✨ Your Recipe App ✨
             </Heading>
           </Center>
           <Center>
