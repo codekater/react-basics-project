@@ -38,20 +38,21 @@ export const RecipeCard = ({
           h="150px"
           objectFit="cover"
         />
-        <Stack>
+        <Stack >
           <Text>
+            <Stack direction="row" justify="center" mt="2">
             {mealType.map((mealType) => (
               <Text
                 fontSize="xs"
                 fontWeight="bold"
                 key={mealType}
-                mt="1em"
                 color="gray.500"
               >
                 {mealType}
               </Text>
             ))}
-            <Heading mt="1" mb="2" size="md" fontWeight="semibold">
+            </Stack>
+            <Heading mt="1" mb="2" size="md" fontWeight="semibold" ml="1" mr="1">
               {label}
             </Heading>
             <Text>
@@ -93,7 +94,7 @@ export const RecipeCard = ({
               {recipe.recipe.cautions.length > 0 && (
                 <>
                   <Text m="1">Cautions:</Text>
-                  <Stack direction="row" justify="center">
+                  <Stack direction="row" justify="center" spacing="1">
                     {cautions.map((caution) => (
                       <Badge
                         backgroundColor="#FEB2B2"
