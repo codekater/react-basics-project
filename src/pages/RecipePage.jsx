@@ -22,7 +22,7 @@ export const RecipePage = ({ recipe, clickFn }) => {
     const minutes = totalMinutes % 60;
     return `${hours} Hours ${minutes > 0 ? ` ${minutes} Minutes` : ""}`;
   }
-  console.log(totalCookingTime(100));
+  //console.log(totalCookingTime(100));
 
   useEffect(() => {
     window.scrollTo(0, 0);
